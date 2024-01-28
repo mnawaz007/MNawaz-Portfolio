@@ -7,3 +7,5 @@ Disallow: /404
 # Allow all crawlers
 User-agent: *
 Allow: /
+
+Sitemap: https://m-nawaz-p-folio.vercel.app/sitemap.xml
