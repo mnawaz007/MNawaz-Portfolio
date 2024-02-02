@@ -15,13 +15,15 @@ export default function Projects() {
                 <div className="container text-center">
                     <div className="row col-md -6 " >
                         <div className="col">
-                          <a href="https://quiz-app-m-nawaz.vercel.app/" target='blank'>  <img className="img img-fluid img-thumbnail mb-4  w-75" src={quiz} alt="html css"  /> </a>
+                        <h2 className='text-danger'>Quiz App</h2>
+                          <a href="https://quiz2feb-mnawaz.vercel.app/" target='blank'>  <img className="img img-fluid img-thumbnail mb-4  w-75" src={quiz} alt="html css"  /> </a>
                        
                             <img className="img img-fluid img-thumbnail mb-4 w-75" src={disney} alt="disney"  />
                             <img className="img img-thumbnail mt-2 mb-4 w-75" src={coder} height={500} alt="tic tac"  />                                              
                             
                         </div>
                         <div className="col">
+                          <h2 className='text-danger' >Shopping cart</h2>
                           <a href="   https://cart-shopping-nawaz.vercel.app/" target='blank'><img className="img img-fluid img-thumbnail w-75 mb-4" src={shoppingcart} alt="coder" /> </a>
                         
                             <img className="img img-fluid img-thumbnail mb-4 w-75" src={responsive} alt="responsive" />
