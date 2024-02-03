@@ -1,8 +1,16 @@
+import {motion} from 'framer-motion';
+import {fadein} from './variants.js'
 export default function Contact() {
 
     return (
         <>   
-        <div className="container text-center"  >
+        <motion.div 
+        variants={fadein('down', .5)}
+        initial = 'hidden'
+        whileInView={'show'}
+        viewport={{once:false, amount:1}}
+
+        className="container text-center"  >
                 <section>
     <h2 className="text-danger">Contact Me</h2>
     <p className="text-light">Feel free to reach out to me using the information below:</p>
@@ -26,7 +34,7 @@ export default function Contact() {
     </form>
 </section>
 <hr className =" w-75 mx-auto border border-danger border-2 opacity-50"/>
-        </div>       
+        </motion.div>       
 
       </>      
 

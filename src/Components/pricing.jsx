@@ -1,3 +1,5 @@
+import {motion} from 'framer-motion';
+import {fadein} from './variants.js'
 export default function Pricing (){
 
     return(
@@ -11,7 +13,13 @@ export default function Pricing (){
 </svg>
         <main>
             <h2 className="text-center text-danger">Price Plan</h2>
-    <div className="row row-cols-1 row-cols-md-3 mb-3 text-center">
+     <motion.div 
+     variants={fadein('up', 0.2)}
+     initial = 'hidden'
+     whileInView={'show'}
+     viewport={{once:false, amount:1}}
+
+     className="row row-cols-1 row-cols-md-3 mb-3 text-center">
       <div className="col">
         <div className="card mb-4 rounded-3 shadow-sm">
           <div className="card-header py-3">
@@ -63,11 +71,16 @@ export default function Pricing (){
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
 
-    <h2 className="display-6 text-center text-danger mb-4">Compare plans</h2>
+    <h2  className="display-6 text-center text-danger mb-4">Compare plans</h2>
 
-    <div className="table-responsive">
+    <motion.div
+    variants={fadein('left', 0.2)}
+    initial = 'hidden'
+    whileInView={'show'}
+    viewport={{once:false, amount:1}}
+    className="table-responsive">
       <table className="table text-center">
         <thead>
           <tr>
@@ -119,7 +132,7 @@ export default function Pricing (){
           </tr>
         </tbody>
       </table>
-    </div>
+    </motion.div>
   </main>
         </div>
         

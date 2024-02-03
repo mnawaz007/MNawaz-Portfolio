@@ -7,22 +7,38 @@ import webdev from '/public/webdev.jpeg'
 import shoppingcart from '/public/shoppingCart.jpeg'
 import quiz from '/public/quiz.jpeg'
 
+import {motion} from 'framer-motion';
+// import {fadein} from './variants.js'
 export default function Projects() {
     return (
         
-            <div className="container mb-4" >
-                <h1 className="text-danger text-center mb-4">My Projects</h1>
+      <motion.div initial = {{opacity: 0}}
+              animate = {{opacity: 1}}
+              transition={{delay : 3, duration : 1}}
+
+                                   className="container mb-4" >
+              
+                <motion.h1 
+                whileHover={{scale : 1.5}}
+                className="text-danger text-center mb-4">My Projects</motion.h1>
                 <div className="container text-center">
-                    <div className="row col-md -6 " >
-                        <div className="col">
+                    <div 
+                    className="row col-md -6 " >
+                        <div  
+                       
+                        className="col">
                         <h2 className='text-danger'>Quiz App</h2>
-                          <a href="https://quiz2feb-mnawaz.vercel.app/" target='blank'>  <img className="img img-fluid img-thumbnail mb-4  w-75" src={quiz} alt="html css"  /> </a>
+                          <a 
+                          
+                          href="https://quiz2feb-mnawaz.vercel.app/" target='blank'>  <img className="img img-fluid img-thumbnail mb-4  w-75" src={quiz} alt="html css"  /> </a>
                        
                             <img className="img img-fluid img-thumbnail mb-4 w-75" src={disney} alt="disney"  />
                             <img className="img img-thumbnail mt-2 mb-4 w-75" src={coder} height={500} alt="tic tac"  />                                              
                             
                         </div>
-                        <div className="col">
+                        <div  
+                                            
+                        className="col">
                           <h2 className='text-danger' >Shopping cart</h2>
                           <a href="   https://cart-shopping-nawaz.vercel.app/" target='blank'><img className="img img-fluid img-thumbnail w-75 mb-4" src={shoppingcart} alt="coder" /> </a>
                         
@@ -59,6 +75,6 @@ export default function Projects() {
 {/* end of carosoul */}
 
                       
-        </div>
+        </motion.div>
                      )
 }
