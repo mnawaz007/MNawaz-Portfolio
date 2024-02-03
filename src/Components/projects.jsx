@@ -15,8 +15,7 @@ export default function Projects() {
       <motion.div initial = {{opacity: 0}}
               animate = {{opacity: 1}}
               transition={{delay : 3, duration : 1}}
-
-                                   className="container mb-4" >
+               className="container mb-4" >
               
                 <motion.h1 
                 whileHover={{scale : 1.5}}
@@ -30,20 +29,29 @@ export default function Projects() {
                         <h2 className='text-danger'>Quiz App</h2>
                           <a 
                           
-                          href="https://quiz2feb-mnawaz.vercel.app/" target='blank'>  <img className="img img-fluid img-thumbnail mb-4  w-75" src={quiz} alt="html css"  /> </a>
-                       
-                            <img className="img img-fluid img-thumbnail mb-4 w-75" src={disney} alt="disney"  />
-                            <img className="img img-thumbnail mt-2 mb-4 w-75" src={coder} height={500} alt="tic tac"  />                                              
-                            
-                        </div>
-                        <div  
-                                            
+                          href="https://quiz2feb-mnawaz.vercel.app/" target='blank'>  < motion.img 
+                          whileHover={{scale : 1.2, backgroundColor : '#fff'}}
+                          className="img img-fluid img-thumbnail mb-4  w-75" src={quiz} alt="html css"  /> </a>                       
+                            < motion.img 
+                            whileHover={{scale : 1.2, backgroundColor : '#fff'}}
+                            className="img img-fluid img-thumbnail mb-4 w-75" src={disney} alt="disney"  />
+                            < motion.img 
+                            whileHover={{scale : 1.2, backgroundColor : '#fff'}}
+                            className="img img-thumbnail mt-2 mb-4 w-75" src={coder} height={500} alt="tic tac"  />                  
+                                                    </div>
+                        <div                                    
                         className="col">
                           <h2 className='text-danger' >Shopping cart</h2>
-                          <a href="   https://cart-shopping-nawaz.vercel.app/" target='blank'><img className="img img-fluid img-thumbnail w-75 mb-4" src={shoppingcart} alt="coder" /> </a>
+                          <a href="   https://cart-shopping-nawaz.vercel.app/" target='blank'>< motion.img 
+                          whileHover={{scale : 1.2, backgroundColor : '#fff'}}
+                          className="img img-fluid img-thumbnail w-75 mb-4" src={shoppingcart} alt="coder" /> </a>
                         
-                            <img className="img img-fluid img-thumbnail mb-4 w-75" src={responsive} alt="responsive" />
-                            <img className="img img-fluid img-thumbnail w-75" src={webdev} alt="web dev" />
+                            < motion.img 
+                            whileHover={{scale : 1.2, backgroundColor : '#fff'}}
+                            className="img img-fluid img-thumbnail mb-4 w-75" src={responsive} alt="responsive" />
+                            < motion.img 
+                            whileHover={{scale : 1.2, backgroundColor : '#f3ffff'}}
+                            className="img img-fluid img-thumbnail w-75" src={webdev} alt="web dev" />
                         </div>
                     </div>
                 </div>

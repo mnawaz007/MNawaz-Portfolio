@@ -38,9 +38,12 @@ export default function Main (){
         <h2 className="text-danger"> Let.s Connect</h2>
         <p className="text-light">Feel free to reach out and connect with me on social media:</p>
        
-            <p><a href="#" target="_blank"><img className="img-fluid  rounded-5 mx-auto " width="80" height="100"  src={insta} alt="LinkedIn"/></a>
-            <a href="#" target="_blank"><img className="img-fluid  rounded-5 mx-5 " width="80" height="100"  src={face} alt="Twitter"/></a>
-            <a href="#" target="_blank"><img className="img-fluid  rounded-5 mx-auto " width="80" height="80"  src={ytube} alt="youtube"/></a></p>
+            <p > <a href="#" target="_blank"><motion.img  
+             whileHover={{scale:1.5, zIndex :1}}  className="img-fluid  rounded-5 mx-auto " width="80" height="100"  src={insta} alt="LinkedIn"/></a>
+            <a href="#" target="_blank"><motion.img  
+            whileHover={{scale:1.5, zIndex :1}} className="img-fluid  rounded-5 mx-5 " width="80" height="100"  src={face} alt="Twitter"/></a>
+            <a href="#" target="_blank"><motion.img 
+            whileHover={{scale:1.5, zIndex :1}}  className="img-fluid  rounded-5 mx-auto " width="80" height="80"  src={ytube} alt="youtube"/></a></p>
             <hr className =" w-75 mx-auto border border-danger border-2 opacity-50"/>
     </section>
    

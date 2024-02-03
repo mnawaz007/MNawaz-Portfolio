@@ -9,7 +9,7 @@ export const fadein = (direction, delay) => {
             x : 0,
             opacity: 1,
             transition: {
-                type : 'tween',
+                type : 'spring', stifness : 130, 
                 duration: 1.5,
                 delay: delay,
                 ease: [0.25, 0.25, 0.25, 0.75],
