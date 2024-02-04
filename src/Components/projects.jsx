@@ -29,7 +29,7 @@ export default function Projects() {
                         <h2 className='text-danger'>Quiz App</h2>
                           <a 
                           
-                          href="https://quiz2feb-mnawaz.vercel.app/" target='blank'>  < motion.img 
+                          href="https://quiz01-mnawaz.vercel.app/" target='blank'>  < motion.img 
                           whileHover={{scale : 1.2, backgroundColor : '#fff'}}
                           className="img img-fluid img-thumbnail mb-4  w-75" src={quiz} alt="html css"  /> </a>                       
                             < motion.img 
