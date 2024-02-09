@@ -24,14 +24,16 @@ export default function Projects() {
                     <div 
                     className="row col-md -6 " >
                         <div  
+                        
                        
                         className="col">
-                        <h2 className='text-danger'>Quiz App</h2>
-                          <a 
-                          
+                        <h2 className='text-danger'>Quiz App <br/> </h2>
+                  <a href="https://github.com/mnawaz007/QuizlogApp.git">Click For Git Hub Repo.</a>
+                          <a                          
                           href="https://quizlog-mnawaz.vercel.app/" target='blank'>  < motion.img 
                           whileHover={{scale : 1.2, backgroundColor : '#fff'}}
-                          className="img img-fluid img-thumbnail mb-4  w-75" src={quiz} alt="html css"  /> </a>                       
+                          className="img img-fluid img-thumbnail mb-4  w-75" src={quiz} alt="html css"  /> </a> 
+                                              
                             < motion.img 
                             whileHover={{scale : 1.2, backgroundColor : '#fff'}}
                             className="img img-fluid img-thumbnail mb-4 w-75" src={disney} alt="disney"  />
