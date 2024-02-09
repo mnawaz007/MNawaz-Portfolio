@@ -21,7 +21,7 @@ export default function Pricing (){
 
      className="row row-cols-1 row-cols-md-3 mb-3 text-center">
       <div className="col">
-        <div className="card mb-4 rounded-3 shadow-sm">
+        <motion.div whileHover={{scale: 1.2}} className="card mb-4 rounded-3 shadow-sm">
           <div className="card-header py-3">
             <h4 className="my-0 fw-normal">Free</h4>
           </div>
@@ -35,10 +35,10 @@ export default function Pricing (){
             </ul>
             <button type="button" className="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
           </div>
-        </div>
+        </motion.div>
       </div>
       <div className="col">
-        <div className="card mb-4 rounded-3 shadow-sm">
+        <motion.div whileHover={{scale: 1.2}} className="card mb-4 rounded-3 shadow-sm">
           <div className="card-header py-3">
             <h4 className="my-0 fw-normal">Pro</h4>
           </div>
@@ -52,10 +52,10 @@ export default function Pricing (){
             </ul>
             <button type="button" className="w-100 btn btn-lg btn-primary">Get started</button>
           </div>
-        </div>
+        </motion.div>
       </div>
       <div className="col">
-        <div className="card mb-4 rounded-3 shadow-sm border-primary">
+        <motion.div whileHover={{scale: 1.2}} className="card mb-4 rounded-3 shadow-sm border-primary">
           <div className="card-header py-3 text-white bg-primary border-primary">
             <h4 className="my-0 fw-normal">Enterprise</h4>
           </div>
@@ -69,13 +69,13 @@ export default function Pricing (){
             </ul>
             <button type="button" className="w-100 btn btn-lg btn-primary">Contact us</button>
           </div>
-        </div>
+        </motion.div>
       </div>
     </motion.div>
 
     <h2  className="display-6 text-center text-danger mb-4">Compare plans</h2>
 
-    <motion.div
+    <motion.div whileHover={{scale: 1.1}}
     variants={fadein('left', 0.2)}
     initial = 'hidden'
     whileInView={'show'}
