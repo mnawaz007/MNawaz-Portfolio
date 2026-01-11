@@ -23,8 +23,7 @@ export default function Projects() {
                 <div className="container text-center">
                     <div 
                     className="row col-md -6 " >
-                        <div  
-                        
+                        <div                          
                        
                         className="col">
                         <h2 className='text-danger'>Quiz App <br/> </h2>
